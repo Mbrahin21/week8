@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello Interval</title>
+</head>
+<body>
+    <!--Goal: Display a clock that updates every second.-->
+    <!--The user doesn’t initiate it-->
+
+    <h1>What time is it?</h1>
+    <!--<is where time appears-->
+    <p id="time"></p>
+
+    <script>
+
+        let timeElement = document.querySelector('#time')
+//takes two parameters
+//Repeatedly after a specified delay
+        setInterval(function() {
+            let date = Date()
+            timeElement.innerHTML = date
+        }, 1000)
+
+    </script>
+
+</body>
+</html>
